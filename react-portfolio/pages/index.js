@@ -1,5 +1,8 @@
-import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import Head from 'next/head';
+import {BsFillMoonStarsFill} from 'react-icons/bs';
+import { AiFillLinkedin, AiFillBook, AiFillYoutube, AiFillGithub } from 'react-icons/ai';
+import Image from "next/image";
+import malton from "../public/malton_logo.png";
 
 export default function Home() {
   return (
@@ -10,17 +13,41 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className=' bg-white px-10'>
         <section className="min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1>Mitchell Alton</h1>
-            <ul>
+            <h1 className='text-xl font-burtons'>Mitchell Alton</h1>
+            <ul className='flex items-center'>
               <li>
-                <BsFillMoonStarsFill />
+                <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
               </li>
-              <li><a href="#">Resume</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-black bg-cyan-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Mitchell Alton</h2>
+            <h3 className='text-2xl py-2'>Software Engineer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>
+              Software Engineer, father, & husband. I'm a Tech enthusiast who loves problem solving.
+              I attended a coding bootcamp, Flatiron School, where I learned the amazing world of coding. 
+              I am highly motivated and am always open to new opportunities where I can utilize my skills 
+              in the creation of meaningful software applications.
+            </p>
+          </div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+            <AiFillLinkedin />
+            <AiFillYoutube />
+            <AiFillGithub />
+          </div>
+          <div className='relative mx-auto rounded-full w-80 h-80 mt-20'>
+            <Image className="rounded-full w-80 h-80" src={malton} fill="true" style="cover"/>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-1"></h3>
+          </div>
         </section>
       </main>
     </>
