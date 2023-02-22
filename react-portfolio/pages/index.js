@@ -3,6 +3,8 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import { AiFillLinkedin, AiFillBook, AiFillYoutube, AiFillGithub } from 'react-icons/ai';
 import Image from "next/image";
 import malton from "../public/malton_logo.png";
+import design from "../public/design.png";
+import fullstack from "../public/website_design.png";
 
 export default function Home() {
   return (
@@ -46,7 +48,40 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1"></h3>
+            <h3 className="text-3xl py-1">Technical Skills & Services</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I have learned a wide variety of technical skills along my journey into the Tech world. 
+              I specialize in building full stack web applications. I offer services such as <span className='text-teal-500'>freelance websites, full stack web applications, e-commerce,</span> etc.
+            </p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={design} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Website Design</h3>
+              <p className='py-2'>
+                Modern website designs built to suit your need. <br /> 
+                I use the latest technologies
+                to build beautiful static websites. 
+              </p>
+              <h4 className='py-4 text-teal-600'>Technologies I use</h4>
+              <p className='text-gray-800 py-1'>HTML</p>
+              <p className='text-gray-800 py-1'>CSS</p>
+              <p className='text-gray-800 py-1'>JavaScript</p>
+            </div>
+            <div className='text-center shadow-lg rounded-xl my-10'>
+              <Image src={fullstack} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Full Stack Web Applications</h3>
+              <p className='py-2'>
+                Powerful applications built to serve your needs. <br />
+                I have worked on many full stack projects <br /> utilizing modern technologies. 
+              </p>
+              <h4 className='py-4 text-teal-600'>Technologies I use</h4>
+              <p className='text-gray-800 py-1'>Ruby | Ruby on Rails</p>
+              <p className='text-gray-800 py-1'>JavaScript | React.js/Next.js</p>
+              <p className='text-gray-800 py-1'>CSS | TailwindCSS</p>
+              <p className='text-gray-800 py-1'>SQL | PostgreSQL</p>
+              <p className='text-gray-800 py-1'>Python | Django</p>
+            </div>
           </div>
         </section>
       </main>
