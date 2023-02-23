@@ -56,26 +56,26 @@ export default function Home() {
           </div>
           <div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={design} width={100} height={100} />
+              {/* <Image src={design} width={100} height={100} /> */}
               <h3 className='text-lg font-medium pt-8 pb-2'>Website Design</h3>
               <p className='py-2'>
                 Modern website designs built to suit your need. <br /> 
                 I use the latest technologies
                 to build beautiful static websites. 
               </p>
-              <h4 className='py-4 text-teal-600'>Technologies I use</h4>
+              <h4 className=' bg-gradient-to-bg-blend-hard-light py-4 text-teal-600'>Technologies I use</h4>
               <p className='text-gray-800 py-1'>HTML</p>
               <p className='text-gray-800 py-1'>CSS</p>
               <p className='text-gray-800 py-1'>JavaScript</p>
             </div>
-            <div className='text-center shadow-lg rounded-xl my-10'>
-              <Image src={fullstack} width={100} height={100} />
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              {/* <Image src={fullstack} width={100} height={100} /> */}
               <h3 className='text-lg font-medium pt-8 pb-2'>Full Stack Web Applications</h3>
               <p className='py-2'>
                 Powerful applications built to serve your needs. <br />
                 I have worked on many full stack projects <br /> utilizing modern technologies. 
               </p>
-              <h4 className='py-4 text-teal-600'>Technologies I use</h4>
+              <h4 className=' bg-radient-to-r from-white via-black to-white py-4 text-teal-600'>Technologies I use</h4>
               <p className='text-gray-800 py-1'>Ruby | Ruby on Rails</p>
               <p className='text-gray-800 py-1'>JavaScript | React.js/Next.js</p>
               <p className='text-gray-800 py-1'>CSS | TailwindCSS</p>
