@@ -62,9 +62,9 @@ export default function Home() {
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href="https://www.linkedin.com/IN/mitchell-alton"><AiFillLinkedin /></a>
-            <a href="https://www.youtube.com/@mitchellalton402"><AiFillYoutube /></a>
-            <a href="https://github.com/timothyalton"><AiFillGithub /></a>
+            <a className='hover:text-teal-600' href="https://www.linkedin.com/in/mitchell-alton"><AiFillLinkedin /></a>
+            <a className='hover:text-teal-600' href="https://www.youtube.com/@mitchellalton402"><AiFillYoutube /></a>
+            <a className='hover:text-teal-600' href="https://github.com/timothyalton"><AiFillGithub /></a>
           </div>
           <div className='relative mx-auto rounded-full w-80 h-80 mt-20'>
             <Image className="rounded-full w-80 h-80" src={malton} fill="true" style="cover"/>
