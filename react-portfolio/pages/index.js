@@ -40,7 +40,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' bg-white px-10 font-burtons'>
+      <main className=' bg-white px-10 font-burtons md:px-20 lg:px-40'>
         <section className="min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl'>Mitchell Alton</h1>
@@ -52,9 +52,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Mitchell Alton</h2>
-            <h3 className='text-2xl py-2'>Software Engineer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Mitchell Alton</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Software Engineer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl'>
               Software Engineer, father, & husband. I'm a Tech enthusiast who loves problem solving.
               I attended a coding bootcamp, Flatiron School, where I learned the amazing world of coding. 
               I am highly motivated and am always open to new opportunities where I can utilize my skills 
@@ -73,7 +73,7 @@ export default function Home() {
 
         <section>
           <div className=' text-center'>
-            <h3 className="text-3xl py-1">Technical Skills & Services</h3>
+            <h3 className="text-3xl py-5">Technical Skills & Services</h3>
             <p className='text-md py-2 leading-8 text-gray-800'>
               I have learned a wide variety of technical skills along my journey into the Tech world. 
               I specialize in building full stack web applications. I offer services such as <span className='text-teal-500'>freelance websites, full stack web applications, e-commerce,</span> etc.
@@ -106,6 +106,21 @@ export default function Home() {
               <p className='text-gray-800 py-1'>CSS | TailwindCSS</p>
               <p className='text-gray-800 py-1'>SQL | PostgreSQL</p>
               <p className='text-gray-800 py-1'>Python | Django</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
+            <p>
+              Since the beginning of my journey into the world of Software develpement,
+              I have always had a passion for problem solving and have developed projects that have had meaning,
+              and taught me a lot. Below are some of the projects that I have developed.
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image src={''}/>
             </div>
           </div>
         </section>
